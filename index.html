@@ -30,6 +30,9 @@
             <li><a href="proceso/">Proceso</a></li>
             <li><a href="guia-estilos/">Guía de estilo</a></li>
             <li><a href="contacto/">Contacto</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#proceso">Proceso</a></li>
+            <li><a href="#contacto">Contacto</a></li>
           </ul>
         </nav>
       </div>
@@ -49,6 +52,8 @@
             <div class="hero__cta">
               <a class="btn btn--primary" href="servicios/">Explorar secciones</a>
               <a class="btn btn--ghost" href="contacto/">Hablar ahora</a>
+              <a class="btn btn--primary" href="#servicios">Explorar secciones</a>
+              <a class="btn btn--ghost" href="#contacto">Hablar ahora</a>
             </div>
           </div>
           <div class="hero__card">
@@ -76,6 +81,15 @@
             Mantén la página principal limpia y encuentra cada bloque en su propia carpeta.
             Las rutas son cortas y fáciles de editar cuando necesites personalizar textos o
             agregar contenido.
+      <section class="section" id="servicios">
+        <div class="container section__header">
+          <div>
+            <p class="eyebrow">Pilares de la plantilla</p>
+            <h2>Bloques reutilizables con visual sólido.</h2>
+          </div>
+          <p class="muted">
+            Cada bloque está pensado para ser fácil de duplicar o eliminar. Los estilos usan
+            variables y clases atómicas para que puedas combinarlos sin romper el diseño.
           </p>
         </div>
         <div class="container cards">
@@ -101,6 +115,118 @@
           </article>
         </div>
       </section>
+            <h3>Maquetación semántica</h3>
+            <p>
+              Secciones claras con etiquetas HTML adecuadas y jerarquía tipográfica que
+              facilita la lectura en escritorio y móvil.
+            </p>
+            <a class="link" href="#introduccion">Ver ejemplo de héroe →</a>
+          </article>
+          <article class="card card--accent">
+            <h3>Estilos consistentes</h3>
+            <p>
+              Sistema de variables, espaciados y grillas reutilizables. Incluye estados
+              hover, sombras suaves y paleta neutra.
+            </p>
+            <a class="link" href="#guia-estilos">Ir a la guía de estilo →</a>
+          </article>
+          <article class="card card--accent">
+            <h3>JS ligero</h3>
+            <p>
+              Solo lo necesario para interacción básica: toggle del menú, scroll suave y
+              anclas accesibles.
+            </p>
+            <a class="link" href="#proceso">Leer el flujo →</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section--muted" id="proceso">
+        <div class="container">
+          <div class="section__header">
+            <div>
+              <p class="eyebrow">Roadmap</p>
+              <h2>Proceso sugerido para tu proyecto.</h2>
+            </div>
+            <p class="muted">
+              Puedes reemplazar los pasos, añadir iconografía o integrar frameworks como
+              React o Astro manteniendo esta base estática.
+            </p>
+          </div>
+          <div class="timeline">
+            <article class="timeline__item">
+              <span class="timeline__step">01</span>
+              <div>
+                <h3>Define la voz visual</h3>
+                <p>Selecciona paleta, tipografía y tono de contenido para alinear todo el sitio.</p>
+              </div>
+            </article>
+            <article class="timeline__item">
+              <span class="timeline__step">02</span>
+              <div>
+                <h3>Construye componentes</h3>
+                <p>Reutiliza las clases utilitarias para tarjetas, botones y grillas responsivas.</p>
+              </div>
+            </article>
+            <article class="timeline__item">
+              <span class="timeline__step">03</span>
+              <div>
+                <h3>Publica en GitHub Pages</h3>
+                <p>Sube el repo, habilita Pages en main o docs/ y mantén la estructura clara.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="guia-estilos">
+        <div class="container styleguide">
+          <div>
+            <p class="eyebrow">Guía rápida</p>
+            <h2>Clases útiles para extender el diseño.</h2>
+            <p class="muted">
+              Usa las utilidades incluidas para márgenes, sombras y etiquetas. Modifica
+              directamente las variables CSS para personalizar el tema sin tocar cada regla.
+            </p>
+          </div>
+          <div class="chips">
+            <span class="chip">.btn --primary / --ghost</span>
+            <span class="chip">.badge</span>
+            <span class="chip">.card --accent</span>
+            <span class="chip">.muted</span>
+            <span class="chip">.container</span>
+            <span class="chip">.section --muted</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--accent" id="contacto">
+        <div class="container contact">
+          <div>
+            <p class="eyebrow">Contacto</p>
+            <h2>Listo para personalizar.</h2>
+            <p class="muted">
+              Rellena este formulario con las próximas tareas o integra tu herramienta
+              favorita de formularios. Todo el estilo ya está aplicado.
+            </p>
+          </div>
+          <form class="form" aria-label="Formulario de contacto">
+            <label class="form__field">
+              <span>Nombre</span>
+              <input type="text" name="nombre" placeholder="Tu nombre completo" required />
+            </label>
+            <label class="form__field">
+              <span>Email</span>
+              <input type="email" name="email" placeholder="nombre@correo.com" required />
+            </label>
+            <label class="form__field">
+              <span>Mensaje</span>
+              <textarea name="mensaje" rows="4" placeholder="Cuéntame sobre tu proyecto"></textarea>
+            </label>
+            <button class="btn btn--primary" type="submit">Enviar</button>
+          </form>
+        </div>
+      </section>
     </main>
 
     <footer class="footer">
@@ -110,6 +236,8 @@
           <a href="#introduccion">Inicio</a>
           <a href="servicios/">Servicios</a>
           <a href="contacto/">Contacto</a>
+          <a href="#servicios">Servicios</a>
+          <a href="#contacto">Contacto</a>
         </div>
       </div>
     </footer>
