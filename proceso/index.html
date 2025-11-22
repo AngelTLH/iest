@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proceso | Proyecto Elegante</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container topbar__content">
+        <div class="brand">
+          <span class="brand__logo" aria-hidden="true">▢</span>
+          <a class="brand__name" href="../">Proyecto Elegante</a>
+        </div>
+        <nav class="nav" aria-label="Navegación principal">
+          <button class="nav__toggle" aria-expanded="false" aria-controls="menu">
+            <span class="sr-only">Abrir menú</span>
+            ☰
+          </button>
+          <ul id="menu" class="nav__list">
+            <li><a class="nav__link" href="../">Inicio</a></li>
+            <li><a class="nav__link" href="../servicios/">Servicios</a></li>
+            <li><a class="nav__link is-active" href="./">Proceso</a></li>
+            <li><a class="nav__link" href="../guia-estilos/">Guía de estilo</a></li>
+            <li><a class="nav__link" href="../contacto/">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="section page-header section--muted">
+        <div class="container section__header">
+          <div>
+            <p class="eyebrow">Roadmap</p>
+            <h1>Proceso sugerido para tu proyecto.</h1>
+          </div>
+          <p class="muted">
+            Puedes reemplazar los pasos, añadir iconografía o integrar frameworks como React
+            o Astro manteniendo esta base estática.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container timeline">
+          <article class="timeline__item">
+            <span class="timeline__step">01</span>
+            <div>
+              <h2>Define la voz visual</h2>
+              <p>Selecciona paleta, tipografía y tono de contenido para alinear todo el sitio.</p>
+            </div>
+          </article>
+          <article class="timeline__item">
+            <span class="timeline__step">02</span>
+            <div>
+              <h2>Construye componentes</h2>
+              <p>Reutiliza las clases utilitarias para tarjetas, botones y grillas responsivas.</p>
+            </div>
+          </article>
+          <article class="timeline__item">
+            <span class="timeline__step">03</span>
+            <div>
+              <h2>Publica en GitHub Pages</h2>
+              <p>Sube el repo, habilita Pages en main o docs/ y mantén la estructura clara.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__content">
+        <p class="muted">Plantilla mínima y estética lista para GitHub Pages.</p>
+        <div class="footer__links">
+          <a href="../">Inicio</a>
+          <a href="../servicios/">Servicios</a>
+          <a href="../contacto/">Contacto</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+  </body>
+</html>

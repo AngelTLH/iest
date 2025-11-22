@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Servicios | Proyecto Elegante</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container topbar__content">
+        <div class="brand">
+          <span class="brand__logo" aria-hidden="true">▢</span>
+          <a class="brand__name" href="../">Proyecto Elegante</a>
+        </div>
+        <nav class="nav" aria-label="Navegación principal">
+          <button class="nav__toggle" aria-expanded="false" aria-controls="menu">
+            <span class="sr-only">Abrir menú</span>
+            ☰
+          </button>
+          <ul id="menu" class="nav__list">
+            <li><a class="nav__link" href="../">Inicio</a></li>
+            <li><a class="nav__link is-active" href="./">Servicios</a></li>
+            <li><a class="nav__link" href="../proceso/">Proceso</a></li>
+            <li><a class="nav__link" href="../guia-estilos/">Guía de estilo</a></li>
+            <li><a class="nav__link" href="../contacto/">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="section page-header">
+        <div class="container section__header">
+          <div>
+            <p class="eyebrow">Pilares de la plantilla</p>
+            <h1>Bloques reutilizables con visual sólido.</h1>
+          </div>
+          <p class="muted">
+            Cada bloque está pensado para ser fácil de duplicar o eliminar. Los estilos usan
+            variables y clases atómicas para que puedas combinarlos sin romper el diseño.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container cards">
+          <article class="card card--accent">
+            <h2>Maquetación semántica</h2>
+            <p>
+              Secciones claras con etiquetas HTML adecuadas y jerarquía tipográfica que
+              facilita la lectura en escritorio y móvil.
+            </p>
+            <a class="link" href="../#introduccion">Ver ejemplo de héroe →</a>
+          </article>
+          <article class="card card--accent">
+            <h2>Estilos consistentes</h2>
+            <p>
+              Sistema de variables, espaciados y grillas reutilizables. Incluye estados
+              hover, sombras suaves y paleta neutra.
+            </p>
+            <a class="link" href="../guia-estilos/">Ir a la guía de estilo →</a>
+          </article>
+          <article class="card card--accent">
+            <h2>JS ligero</h2>
+            <p>
+              Solo lo necesario para interacción básica: toggle del menú, scroll suave y
+              anclas accesibles.
+            </p>
+            <a class="link" href="../proceso/">Leer el flujo →</a>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__content">
+        <p class="muted">Plantilla mínima y estética lista para GitHub Pages.</p>
+        <div class="footer__links">
+          <a href="../">Inicio</a>
+          <a href="./">Servicios</a>
+          <a href="../contacto/">Contacto</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+  </body>
+</html>
