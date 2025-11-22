@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Consultora IEST - Soluciones a tus problemas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/svg+xml" href="assets/img/mountain.svg" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container topbar__content">
+        <div class="brand">
+          <span class="brand__logo" aria-hidden="true">⛰️</span>
+          <span class="brand__name">Consultora IEST</span>
+        </div>
+        <nav class="nav" aria-label="Navegación principal">
+          <button class="nav__toggle" aria-expanded="false" aria-controls="menu">
+            <span class="sr-only">Abrir menú</span>
+            ☰
+          </button>
+          <div class="nav__wrap">
+            <ul id="menu" class="nav__list">
+              <li><a class="nav__link is-active" href="#introduccion">Inicio</a></li>
+              <li><a class="nav__link" href="servicios/">¿Qué hacemos?</a></li>
+              <li><a class="nav__link" href="productos/">Productos</a></li>
+              <li><a class="nav__link" href="proceso/">Proceso</a></li>
+              <li><a class="nav__link" href="contacto/">Contacto</a></li>
+            </ul>
+            <button class="theme-toggle" type="button" aria-pressed="false" data-theme-toggle>
+              <span class="theme-toggle__icon theme-toggle__icon--sun" aria-hidden="true">☀️</span>
+              <span class="theme-toggle__icon theme-toggle__icon--moon" aria-hidden="true">🌙</span>
+              <span class="sr-only">Cambiar tema</span>
+            </button>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="introduccion">
+        <div class="container hero__grid">
+          <div class="hero__copy">
+            <p class="badge">Consultora IEST</p>
+            <h1>Diseños limpios y soluciones claras para tus proyectos.</h1>
+            <p class="lead">
+              Esta estructura combina buenas prácticas en HTML, CSS y JavaScript para que
+              puedas iterar rápido sobre una base elegante. Ideal para portafolios,
+              landings o documentación visual.
+            </p>
+            <div class="hero__cta">
+              <a class="btn btn--primary" href="servicios/">Explorar secciones</a>
+            </div>
+          </div>
+          <div class="hero__card">
+            <div class="card">
+              <p class="eyebrow">Estructura sugerida</p>
+              <ul class="list">
+                <li>assets/css para estilos globales.</li>
+                <li>assets/js para comportamientos ligeros.</li>
+                <li>assets/img para gráficas o íconos.</li>
+                <li>Componentes semánticos listos para adaptar.</li>
+              </ul>
+              <p class="muted">Orden primero, creatividad después.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--muted">
+        <div class="container section__header">
+          <div>
+            <p class="eyebrow">Navega por capítulos</p>
+            <h2>Páginas independientes para cada sección.</h2>
+          </div>
+          <p class="muted">
+            Mantén la página principal limpia y encuentra cada bloque en su propia carpeta.
+            Las rutas son cortas y fáciles de editar cuando necesites personalizar textos o
+            agregar contenido.
+          </p>
+        </div>
+        <div class="container cards">
+          <article class="card card--accent">
+            <h3>¿Qué hacemos?</h3>
+            <p>Tarjetas con los pilares del proyecto y CTA hacia ejemplos.</p>
+            <a class="link" href="servicios/">Explorar cómo trabajamos →</a>
+          </article>
+          <article class="card card--accent">
+            <h3>Proceso</h3>
+            <p>Roadmap detallado con pasos claros para tu entrega.</p>
+            <a class="link" href="proceso/">Ir a Proceso →</a>
+          </article>
+          <article class="card card--accent">
+            <h3>Productos</h3>
+            <p>Plantillas y entregables listos para adaptar rápidamente.</p>
+            <a class="link" href="productos/">Ver productos →</a>
+          </article>
+          <article class="card card--accent">
+            <h3>Contacto</h3>
+            <p>Formulario estilizado con campos accesibles.</p>
+            <a class="link" href="contacto/">Ir a Contacto →</a>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__content">
+        <p class="muted">© 2025 - Derechos reservados Consultora IEST.</p>
+        <div class="footer__links">
+          <a href="#introduccion">Inicio</a>
+          <a href="servicios/">¿Qué hacemos?</a>
+          <a href="productos/">Productos</a>
+          <a href="contacto/">Contacto</a>
+          <a href="politica-privacidad/">Política de privacidad</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

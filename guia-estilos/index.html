@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guía de estilo | Consultora IEST</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/svg+xml" href="../assets/img/mountain.svg" />
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container topbar__content">
+        <div class="brand">
+          <span class="brand__logo" aria-hidden="true">⛰️</span>
+          <a class="brand__name" href="../">Consultora IEST</a>
+        </div>
+        <nav class="nav" aria-label="Navegación principal">
+          <button class="nav__toggle" aria-expanded="false" aria-controls="menu">
+            <span class="sr-only">Abrir menú</span>
+            ☰
+          </button>
+          <div class="nav__wrap">
+            <ul id="menu" class="nav__list">
+              <li><a class="nav__link" href="../">Inicio</a></li>
+              <li><a class="nav__link" href="../servicios/">¿Qué hacemos?</a></li>
+              <li><a class="nav__link" href="../productos/">Productos</a></li>
+              <li><a class="nav__link" href="../proceso/">Proceso</a></li>
+              <li><a class="nav__link" href="../contacto/">Contacto</a></li>
+            </ul>
+            <button class="theme-toggle" type="button" aria-pressed="false" data-theme-toggle>
+              <span class="theme-toggle__icon theme-toggle__icon--sun" aria-hidden="true">☀️</span>
+              <span class="theme-toggle__icon theme-toggle__icon--moon" aria-hidden="true">🌙</span>
+              <span class="sr-only">Cambiar tema</span>
+            </button>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="section page-header">
+        <div class="container styleguide">
+          <div>
+            <p class="eyebrow">Guía rápida</p>
+            <h1>Clases útiles para extender el diseño.</h1>
+            <p class="muted">
+              Usa las utilidades incluidas para márgenes, sombras y etiquetas. Modifica
+              directamente las variables CSS para personalizar el tema sin tocar cada regla.
+            </p>
+          </div>
+          <div class="chips">
+            <span class="chip">.btn --primary / --ghost</span>
+            <span class="chip">.badge</span>
+            <span class="chip">.card --accent</span>
+            <span class="chip">.muted</span>
+            <span class="chip">.container</span>
+            <span class="chip">.section --muted</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--muted">
+        <div class="container cards">
+          <article class="card">
+            <p class="eyebrow">Variables</p>
+            <h2>Personaliza rápido</h2>
+            <p>Colores, radios y sombras están centralizados en <code>:root</code>.</p>
+          </article>
+          <article class="card">
+            <p class="eyebrow">Layout</p>
+            <h2>Grillas y contenedores</h2>
+            <p>Usa <code>.container</code>, <code>.hero__grid</code> y <code>.cards</code> para mantener la alineación.</p>
+          </article>
+          <article class="card">
+            <p class="eyebrow">Texto</p>
+            <h2>Consistencia tipográfica</h2>
+            <p>Combina títulos <code>h1-h3</code> con <code>.lead</code> y <code>.muted</code> para jerarquía clara.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__content">
+        <p class="muted">© 2025 - Derechos reservados Consultora IEST.</p>
+        <div class="footer__links">
+          <a href="../">Inicio</a>
+          <a href="../servicios/">¿Qué hacemos?</a>
+          <a href="../productos/">Productos</a>
+          <a href="../proceso/">Proceso</a>
+          <a href="../contacto/">Contacto</a>
+          <a href="../politica-privacidad/">Política de privacidad</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+  </body>
+</html>
