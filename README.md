@@ -9,11 +9,19 @@ assets/
   css/        # Estilos globales y utilidades
   js/         # Interacciones ligeras (menú, scroll suave)
   img/        # Íconos e imágenes
+servicios/     # Página independiente para el bloque de servicios
+proceso/       # Roadmap detallado
+guia-estilos/  # Guía rápida de utilidades y variables
+contacto/      # Formulario estilizado
+index.html     # Página principal con CTA hacia cada sección
 index.html     # Página principal con secciones reutilizables
 ```
 
 ## Cómo usar
 
+1. Clona el repositorio y abre `index.html` en tu navegador para ver la portada.
+2. Edita el contenido específico en la carpeta correspondiente (`servicios/`, `proceso/`, etc.).
+3. Ajusta las variables CSS en `assets/css/styles.css` para cambiar paleta y tipografía.
 1. Clona el repositorio y abre `index.html` en tu navegador para ver la plantilla.
 2. Ajusta las variables CSS en `assets/css/styles.css` para cambiar paleta y tipografía.
 3. Duplica o elimina bloques de secciones en `index.html` según tus necesidades.

@@ -400,3 +400,13 @@ textarea:focus {
     display: inline-flex;
   }
 }
+
+/* Páginas internas */
+.page-header {
+  padding-top: clamp(3rem, 5vw, 4.5rem);
+}
+
+.nav__list .is-active {
+  color: var(--color-primary);
+  font-weight: 600;
+}
