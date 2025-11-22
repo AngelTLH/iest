@@ -3,37 +3,42 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Plantilla Estética | GitHub Pages</title>
+    <title>Consultora IEST - Soluciones a tus problemas</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="icon" type="image/svg+xml" href="assets/img/mountain.svg" />
     <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
   <body>
     <header class="topbar">
       <div class="container topbar__content">
         <div class="brand">
-          <span class="brand__logo" aria-hidden="true">▢</span>
-          <span class="brand__name">Proyecto Elegante</span>
+          <span class="brand__logo" aria-hidden="true">⛰️</span>
+          <span class="brand__name">Consultora IEST</span>
         </div>
         <nav class="nav" aria-label="Navegación principal">
           <button class="nav__toggle" aria-expanded="false" aria-controls="menu">
             <span class="sr-only">Abrir menú</span>
             ☰
           </button>
-          <ul id="menu" class="nav__list">
-            <li><a href="#introduccion">Inicio</a></li>
-            <li><a href="servicios/">Servicios</a></li>
-            <li><a href="proceso/">Proceso</a></li>
-            <li><a href="guia-estilos/">Guía de estilo</a></li>
-            <li><a href="contacto/">Contacto</a></li>
-            <li><a href="#servicios">Servicios</a></li>
-            <li><a href="#proceso">Proceso</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-          </ul>
+          <div class="nav__wrap">
+            <ul id="menu" class="nav__list">
+              <li><a class="nav__link is-active" href="#introduccion">Inicio</a></li>
+              <li><a class="nav__link" href="servicios/">¿Qué hacemos?</a></li>
+              <li><a class="nav__link" href="productos/">Productos</a></li>
+              <li><a class="nav__link" href="proceso/">Proceso</a></li>
+              <li><a class="nav__link" href="contacto/">Contacto</a></li>
+            </ul>
+            <button class="theme-toggle" type="button" aria-pressed="false" data-theme-toggle>
+              <span class="theme-toggle__icon theme-toggle__icon--sun" aria-hidden="true">☀️</span>
+              <span class="theme-toggle__icon theme-toggle__icon--moon" aria-hidden="true">🌙</span>
+              <span class="sr-only">Cambiar tema</span>
+            </button>
+          </div>
         </nav>
       </div>
     </header>
@@ -42,8 +47,8 @@
       <section class="hero" id="introduccion">
         <div class="container hero__grid">
           <div class="hero__copy">
-            <p class="badge">Plantilla base para GitHub Pages</p>
-            <h1>Diseños limpios, código ordenado y listo para personalizar.</h1>
+            <p class="badge">Consultora IEST</p>
+            <h1>Diseños limpios y soluciones claras para tus proyectos.</h1>
             <p class="lead">
               Esta estructura combina buenas prácticas en HTML, CSS y JavaScript para que
               puedas iterar rápido sobre una base elegante. Ideal para portafolios,
@@ -51,9 +56,6 @@
             </p>
             <div class="hero__cta">
               <a class="btn btn--primary" href="servicios/">Explorar secciones</a>
-              <a class="btn btn--ghost" href="contacto/">Hablar ahora</a>
-              <a class="btn btn--primary" href="#servicios">Explorar secciones</a>
-              <a class="btn btn--ghost" href="#contacto">Hablar ahora</a>
             </div>
           </div>
           <div class="hero__card">
@@ -81,22 +83,13 @@
             Mantén la página principal limpia y encuentra cada bloque en su propia carpeta.
             Las rutas son cortas y fáciles de editar cuando necesites personalizar textos o
             agregar contenido.
-      <section class="section" id="servicios">
-        <div class="container section__header">
-          <div>
-            <p class="eyebrow">Pilares de la plantilla</p>
-            <h2>Bloques reutilizables con visual sólido.</h2>
-          </div>
-          <p class="muted">
-            Cada bloque está pensado para ser fácil de duplicar o eliminar. Los estilos usan
-            variables y clases atómicas para que puedas combinarlos sin romper el diseño.
           </p>
         </div>
         <div class="container cards">
           <article class="card card--accent">
-            <h3>Servicios</h3>
+            <h3>¿Qué hacemos?</h3>
             <p>Tarjetas con los pilares del proyecto y CTA hacia ejemplos.</p>
-            <a class="link" href="servicios/">Ir a Servicios →</a>
+            <a class="link" href="servicios/">Explorar cómo trabajamos →</a>
           </article>
           <article class="card card--accent">
             <h3>Proceso</h3>
@@ -104,9 +97,9 @@
             <a class="link" href="proceso/">Ir a Proceso →</a>
           </article>
           <article class="card card--accent">
-            <h3>Guía de estilo</h3>
-            <p>Variables, utilidades y chips listos para extender el diseño.</p>
-            <a class="link" href="guia-estilos/">Ir a Guía →</a>
+            <h3>Productos</h3>
+            <p>Plantillas y entregables listos para adaptar rápidamente.</p>
+            <a class="link" href="productos/">Ver productos →</a>
           </article>
           <article class="card card--accent">
             <h3>Contacto</h3>
@@ -115,129 +108,17 @@
           </article>
         </div>
       </section>
-            <h3>Maquetación semántica</h3>
-            <p>
-              Secciones claras con etiquetas HTML adecuadas y jerarquía tipográfica que
-              facilita la lectura en escritorio y móvil.
-            </p>
-            <a class="link" href="#introduccion">Ver ejemplo de héroe →</a>
-          </article>
-          <article class="card card--accent">
-            <h3>Estilos consistentes</h3>
-            <p>
-              Sistema de variables, espaciados y grillas reutilizables. Incluye estados
-              hover, sombras suaves y paleta neutra.
-            </p>
-            <a class="link" href="#guia-estilos">Ir a la guía de estilo →</a>
-          </article>
-          <article class="card card--accent">
-            <h3>JS ligero</h3>
-            <p>
-              Solo lo necesario para interacción básica: toggle del menú, scroll suave y
-              anclas accesibles.
-            </p>
-            <a class="link" href="#proceso">Leer el flujo →</a>
-          </article>
-        </div>
-      </section>
-
-      <section class="section section--muted" id="proceso">
-        <div class="container">
-          <div class="section__header">
-            <div>
-              <p class="eyebrow">Roadmap</p>
-              <h2>Proceso sugerido para tu proyecto.</h2>
-            </div>
-            <p class="muted">
-              Puedes reemplazar los pasos, añadir iconografía o integrar frameworks como
-              React o Astro manteniendo esta base estática.
-            </p>
-          </div>
-          <div class="timeline">
-            <article class="timeline__item">
-              <span class="timeline__step">01</span>
-              <div>
-                <h3>Define la voz visual</h3>
-                <p>Selecciona paleta, tipografía y tono de contenido para alinear todo el sitio.</p>
-              </div>
-            </article>
-            <article class="timeline__item">
-              <span class="timeline__step">02</span>
-              <div>
-                <h3>Construye componentes</h3>
-                <p>Reutiliza las clases utilitarias para tarjetas, botones y grillas responsivas.</p>
-              </div>
-            </article>
-            <article class="timeline__item">
-              <span class="timeline__step">03</span>
-              <div>
-                <h3>Publica en GitHub Pages</h3>
-                <p>Sube el repo, habilita Pages en main o docs/ y mantén la estructura clara.</p>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="guia-estilos">
-        <div class="container styleguide">
-          <div>
-            <p class="eyebrow">Guía rápida</p>
-            <h2>Clases útiles para extender el diseño.</h2>
-            <p class="muted">
-              Usa las utilidades incluidas para márgenes, sombras y etiquetas. Modifica
-              directamente las variables CSS para personalizar el tema sin tocar cada regla.
-            </p>
-          </div>
-          <div class="chips">
-            <span class="chip">.btn --primary / --ghost</span>
-            <span class="chip">.badge</span>
-            <span class="chip">.card --accent</span>
-            <span class="chip">.muted</span>
-            <span class="chip">.container</span>
-            <span class="chip">.section --muted</span>
-          </div>
-        </div>
-      </section>
-
-      <section class="section section--accent" id="contacto">
-        <div class="container contact">
-          <div>
-            <p class="eyebrow">Contacto</p>
-            <h2>Listo para personalizar.</h2>
-            <p class="muted">
-              Rellena este formulario con las próximas tareas o integra tu herramienta
-              favorita de formularios. Todo el estilo ya está aplicado.
-            </p>
-          </div>
-          <form class="form" aria-label="Formulario de contacto">
-            <label class="form__field">
-              <span>Nombre</span>
-              <input type="text" name="nombre" placeholder="Tu nombre completo" required />
-            </label>
-            <label class="form__field">
-              <span>Email</span>
-              <input type="email" name="email" placeholder="nombre@correo.com" required />
-            </label>
-            <label class="form__field">
-              <span>Mensaje</span>
-              <textarea name="mensaje" rows="4" placeholder="Cuéntame sobre tu proyecto"></textarea>
-            </label>
-            <button class="btn btn--primary" type="submit">Enviar</button>
-          </form>
-        </div>
-      </section>
     </main>
 
     <footer class="footer">
       <div class="container footer__content">
-        <p class="muted">Plantilla mínima y estética lista para GitHub Pages.</p>
+        <p class="muted">© 2025 - Derechos reservados Consultora IEST.</p>
         <div class="footer__links">
           <a href="#introduccion">Inicio</a>
-          <a href="servicios/">Servicios</a>
+          <a href="servicios/">¿Qué hacemos?</a>
+          <a href="productos/">Productos</a>
           <a href="contacto/">Contacto</a>
-          <a href="#servicios">Servicios</a>
-          <a href="#contacto">Contacto</a>
+          <a href="politica-privacidad/">Política de privacidad</a>
         </div>
       </div>
     </footer>

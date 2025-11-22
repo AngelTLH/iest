@@ -3,34 +3,42 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contacto | Proyecto Elegante</title>
+    <title>Contacto | Consultora IEST</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="icon" type="image/svg+xml" href="../assets/img/mountain.svg" />
     <link rel="stylesheet" href="../assets/css/styles.css" />
   </head>
   <body>
     <header class="topbar">
       <div class="container topbar__content">
         <div class="brand">
-          <span class="brand__logo" aria-hidden="true">▢</span>
-          <a class="brand__name" href="../">Proyecto Elegante</a>
+          <span class="brand__logo" aria-hidden="true">⛰️</span>
+          <a class="brand__name" href="../">Consultora IEST</a>
         </div>
         <nav class="nav" aria-label="Navegación principal">
           <button class="nav__toggle" aria-expanded="false" aria-controls="menu">
             <span class="sr-only">Abrir menú</span>
             ☰
           </button>
-          <ul id="menu" class="nav__list">
-            <li><a href="../">Inicio</a></li>
-            <li><a href="../servicios/">Servicios</a></li>
-            <li><a href="../proceso/">Proceso</a></li>
-            <li><a href="../guia-estilos/">Guía de estilo</a></li>
-            <li><a class="is-active" href="./">Contacto</a></li>
-          </ul>
+          <div class="nav__wrap">
+            <ul id="menu" class="nav__list">
+              <li><a class="nav__link" href="../">Inicio</a></li>
+              <li><a class="nav__link" href="../servicios/">¿Qué hacemos?</a></li>
+              <li><a class="nav__link" href="../productos/">Productos</a></li>
+              <li><a class="nav__link" href="../proceso/">Proceso</a></li>
+              <li><a class="nav__link is-active" href="./">Contacto</a></li>
+            </ul>
+            <button class="theme-toggle" type="button" aria-pressed="false" data-theme-toggle>
+              <span class="theme-toggle__icon theme-toggle__icon--sun" aria-hidden="true">☀️</span>
+              <span class="theme-toggle__icon theme-toggle__icon--moon" aria-hidden="true">🌙</span>
+              <span class="sr-only">Cambiar tema</span>
+            </button>
+          </div>
         </nav>
       </div>
     </header>
@@ -67,11 +75,13 @@
 
     <footer class="footer">
       <div class="container footer__content">
-        <p class="muted">Plantilla mínima y estética lista para GitHub Pages.</p>
+        <p class="muted">© 2025 - Derechos reservados Consultora IEST.</p>
         <div class="footer__links">
           <a href="../">Inicio</a>
-          <a href="../servicios/">Servicios</a>
+          <a href="../servicios/">¿Qué hacemos?</a>
+          <a href="../productos/">Productos</a>
           <a href="./">Contacto</a>
+          <a href="../politica-privacidad/">Política de privacidad</a>
         </div>
       </div>
     </footer>
