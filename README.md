@@ -14,6 +14,7 @@ proceso/       # Roadmap detallado
 guia-estilos/  # Guía rápida de utilidades y variables
 contacto/      # Formulario estilizado
 index.html     # Página principal con CTA hacia cada sección
+index.html     # Página principal con secciones reutilizables
 ```
 
 ## Cómo usar
@@ -21,6 +22,9 @@ index.html     # Página principal con CTA hacia cada sección
 1. Clona el repositorio y abre `index.html` en tu navegador para ver la portada.
 2. Edita el contenido específico en la carpeta correspondiente (`servicios/`, `proceso/`, etc.).
 3. Ajusta las variables CSS en `assets/css/styles.css` para cambiar paleta y tipografía.
+1. Clona el repositorio y abre `index.html` en tu navegador para ver la plantilla.
+2. Ajusta las variables CSS en `assets/css/styles.css` para cambiar paleta y tipografía.
+3. Duplica o elimina bloques de secciones en `index.html` según tus necesidades.
 4. Sube el proyecto a GitHub y habilita **Pages** apuntando a la rama principal o carpeta `/docs` si prefieres mantener el código separado.
 
 ## Personalización rápida
