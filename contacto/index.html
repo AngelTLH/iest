@@ -44,30 +44,45 @@
     </header>
 
     <main>
-      <section class="section section--accent page-header">
-        <div class="container contact">
+      <section class="section page-header">
+        <div class="container section__header">
           <div>
-            <p class="eyebrow">Contacto</p>
-            <h1>Listo para personalizar.</h1>
-            <p class="muted">
-              Rellena este formulario con las próximas tareas o integra tu herramienta
-              favorita de formularios. Todo el estilo ya está aplicado.
-            </p>
+            <p class="eyebrow">Agendemos</p>
+            <h1>Cuéntanos tu reto de datos.</h1>
           </div>
-          <form class="form" aria-label="Formulario de contacto">
-            <label class="form__field">
-              <span>Nombre</span>
-              <input type="text" name="nombre" placeholder="Tu nombre completo" required />
-            </label>
-            <label class="form__field">
-              <span>Email</span>
-              <input type="email" name="email" placeholder="nombre@correo.com" required />
-            </label>
-            <label class="form__field">
-              <span>Mensaje</span>
-              <textarea name="mensaje" rows="4" placeholder="Cuéntame sobre tu proyecto"></textarea>
-            </label>
-            <button class="btn btn--primary" type="submit">Enviar</button>
+          <p class="muted">
+            Preferimos conversaciones técnicas: comparte contexto, datasets y restricciones.
+            Respondemos con un plan concreto y supuestos explícitos.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container contact">
+          <div class="card">
+            <h2>¿Qué necesitas?</h2>
+            <p>
+              Te contactaremos con una propuesta y estimación inicial. No vendemos promesas
+              genéricas: cada recomendación incluye métricas, riesgos y próximos pasos.
+            </p>
+            <ul class="list">
+              <li>Revisión de calidad de datos y factibilidad.</li>
+              <li>Diseño estadístico y experimentos A/B.</li>
+              <li>Modelos explicables y desplegables.</li>
+            </ul>
+          </div>
+          <form class="form" action="#" method="post">
+            <label class="sr-only" for="nombre">Nombre</label>
+            <input id="nombre" name="nombre" type="text" placeholder="Nombre y apellido" required />
+
+            <label class="sr-only" for="correo">Correo</label>
+            <input id="correo" name="correo" type="email" placeholder="Correo corporativo" required />
+
+            <label class="sr-only" for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="4" placeholder="Describe el proyecto, objetivos y plazos." required></textarea>
+
+            <button class="btn btn--primary" type="submit">Contactar al equipo técnico</button>
+            <p class="muted">Al enviar aceptas nuestra <a href="../politica-privacidad/">política de privacidad</a>.</p>
           </form>
         </div>
       </section>
@@ -80,6 +95,7 @@
           <a href="../">Inicio</a>
           <a href="../servicios/">¿Qué hacemos?</a>
           <a href="../productos/">Productos</a>
+          <a href="../proceso/">Proceso</a>
           <a href="./">Contacto</a>
           <a href="../politica-privacidad/">Política de privacidad</a>
         </div>
