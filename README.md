@@ -29,11 +29,11 @@ index.html     # Página principal con CTA hacia cada sección
 
 El formulario de `contacto/` no envía datos a GitHub. Para almacenar la información de manera privada:
 
-1. Crea un endpoint seguro (ej. [Formspree](https://formspree.io/) con plan privado o una API propia detrás de autenticación).
-2. En `contacto/index.html`, asigna la URL de ese endpoint al atributo `data-endpoint` del formulario con `data-secure-form`.
-3. Opcional: configura almacenamiento cifrado o una base de datos privada en tu backend; la página solo hace `POST` al endpoint que definas.
+1. Se incluyó el endpoint privado de Formspree proporcionado por el cliente (`https://formspree.io/f/xqaoadyy`) en `contacto/index.html` como valor de `action` y `data-endpoint`.
+2. Si prefieres otro backend, reemplaza esa URL por tu endpoint seguro (API propia detrás de autenticación, base de datos privada o plan privado de Formspree).
+3. Opcional: añade validaciones o cifrado adicional en tu backend; la página solo hace `POST` al endpoint que definas.
 
-Sin un endpoint configurado, el envío se bloqueará con un mensaje para evitar exponer datos.
+Sin un endpoint válido, el envío se bloqueará con un mensaje para evitar exponer datos.
 
 ## Personalización rápida
 

@@ -169,19 +169,22 @@ img {
   cursor: pointer;
 }
 
+
 .theme-toggle {
+  --toggle-width: 126px;
+  --toggle-padding: 7px;
+  --thumb-size: 24px;
   position: relative;
   display: inline-flex;
   align-items: center;
-  gap: 0.35rem;
+  justify-content: space-between;
+  gap: 0.45rem;
   border-radius: 999px;
   border: 1px solid var(--border);
-  background: var(--nav-surface);
+  background: linear-gradient(120deg, rgba(124, 58, 237, 0.08), rgba(37, 99, 235, 0.08));
   color: var(--text);
-  --thumb-size: 26px;
-  --thumb-offset: 6px;
-  padding: 0.35rem 0.75rem;
-  min-width: 96px;
+  padding: var(--toggle-padding) calc(var(--toggle-padding) + 6px);
+  width: var(--toggle-width);
   cursor: pointer;
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
   backdrop-filter: blur(10px);
@@ -192,10 +195,10 @@ img {
 .theme-toggle::after {
   content: '';
   position: absolute;
-  left: var(--thumb-offset);
-  top: 6px;
-  bottom: 6px;
+  top: var(--toggle-padding);
+  left: var(--toggle-padding);
   width: var(--thumb-size);
+  height: var(--thumb-size);
   border-radius: 999px;
   background: linear-gradient(135deg, #7c3aed, #2563eb);
   box-shadow: 0 6px 18px rgba(37, 99, 235, 0.25);
@@ -221,7 +224,7 @@ img {
 }
 
 :root[data-theme='light'] .theme-toggle::after {
-  transform: translateX(calc(100% - var(--thumb-size) - (var(--thumb-offset) * 2)));
+  transform: translateX(calc(var(--toggle-width) - var(--thumb-size) - (var(--toggle-padding) * 2)));
   background: linear-gradient(135deg, #fbbf24, #f97316);
   box-shadow: 0 8px 20px rgba(249, 115, 22, 0.35);
 }
