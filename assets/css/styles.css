@@ -171,22 +171,25 @@ img {
 
 
 .theme-toggle {
-  --toggle-width: 126px;
-  --toggle-padding: 7px;
-  --thumb-size: 24px;
+  --toggle-width: 44px;
+  --toggle-height: 76px;
+  --toggle-padding: 8px;
+  --thumb-size: 20px;
   position: relative;
   display: inline-flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-between;
   gap: 0.45rem;
   border-radius: 999px;
   border: 1px solid var(--border);
-  background: linear-gradient(120deg, rgba(124, 58, 237, 0.08), rgba(37, 99, 235, 0.08));
+  background: rgba(255, 255, 255, 0.02);
   color: var(--text);
-  padding: var(--toggle-padding) calc(var(--toggle-padding) + 6px);
+  padding: var(--toggle-padding);
   width: var(--toggle-width);
+  height: var(--toggle-height);
   cursor: pointer;
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.14);
   backdrop-filter: blur(10px);
   transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease,
     background 0.2s ease, color 0.2s ease;
@@ -195,14 +198,14 @@ img {
 .theme-toggle::after {
   content: '';
   position: absolute;
-  top: 50%;
-  left: var(--toggle-padding);
+  top: var(--toggle-padding);
+  left: 50%;
   width: var(--thumb-size);
   height: var(--thumb-size);
   border-radius: 999px;
   background: linear-gradient(135deg, #7c3aed, #2563eb);
   box-shadow: 0 6px 18px rgba(37, 99, 235, 0.25);
-  transform: translate(0, -50%);
+  transform: translate(-50%, 0);
   transition: transform 0.25s ease;
 }
 
@@ -227,14 +230,14 @@ img {
 }
 
 :root[data-theme='light'] .theme-toggle::after {
-  transform: translate(calc(var(--toggle-width) - var(--thumb-size) - (var(--toggle-padding) * 2)), -50%);
+  transform: translate(-50%, calc(var(--toggle-height) - var(--thumb-size) - (var(--toggle-padding) * 2)));
   background: linear-gradient(135deg, #fbbf24, #f97316);
   box-shadow: 0 8px 20px rgba(249, 115, 22, 0.35);
 }
 
 .theme-toggle:hover {
   transform: translateY(-1px);
-  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.22);
+  box-shadow: 0 12px 26px rgba(0, 0, 0, 0.2);
   border-color: var(--accent-soft);
 }
 
