@@ -25,6 +25,16 @@ index.html     # Página principal con CTA hacia cada sección
 3. Ajusta las variables CSS en `assets/css/styles.css` para cambiar paleta y tipografía.
 4. Sube el proyecto a GitHub y habilita **Pages** apuntando a la rama principal o carpeta `/docs` si prefieres mantener el código separado.
 
+### Recepción privada de formularios
+
+El formulario de `contacto/` no envía datos a GitHub. Para almacenar la información de manera privada:
+
+1. Crea un endpoint seguro (ej. [Formspree](https://formspree.io/) con plan privado o una API propia detrás de autenticación).
+2. En `contacto/index.html`, asigna la URL de ese endpoint al atributo `data-endpoint` del formulario con `data-secure-form`.
+3. Opcional: configura almacenamiento cifrado o una base de datos privada en tu backend; la página solo hace `POST` al endpoint que definas.
+
+Sin un endpoint configurado, el envío se bloqueará con un mensaje para evitar exponer datos.
+
 ## Personalización rápida
 
 - Coloca tus imágenes en `assets/img` y actualiza las rutas en el HTML.

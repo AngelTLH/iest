@@ -178,8 +178,10 @@ img {
   border: 1px solid var(--border);
   background: var(--nav-surface);
   color: var(--text);
+  --thumb-size: 26px;
+  --thumb-offset: 6px;
   padding: 0.35rem 0.75rem;
-  min-width: 90px;
+  min-width: 96px;
   cursor: pointer;
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
   backdrop-filter: blur(10px);
@@ -190,8 +192,10 @@ img {
 .theme-toggle::after {
   content: '';
   position: absolute;
-  inset: 5px auto 5px 8px;
-  width: 26px;
+  left: var(--thumb-offset);
+  top: 6px;
+  bottom: 6px;
+  width: var(--thumb-size);
   border-radius: 999px;
   background: linear-gradient(135deg, #7c3aed, #2563eb);
   box-shadow: 0 6px 18px rgba(37, 99, 235, 0.25);
@@ -217,7 +221,7 @@ img {
 }
 
 :root[data-theme='light'] .theme-toggle::after {
-  transform: translateX(38px);
+  transform: translateX(calc(100% - var(--thumb-size) - (var(--thumb-offset) * 2)));
   background: linear-gradient(135deg, #fbbf24, #f97316);
   box-shadow: 0 8px 20px rgba(249, 115, 22, 0.35);
 }
