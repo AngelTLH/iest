@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>¿Qué hacemos? | Consultora IEST</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/svg+xml" href="../assets/img/mountain.svg" />
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container topbar__content">
+        <div class="brand">
+          <span class="brand__logo" aria-hidden="true">⛰️</span>
+          <a class="brand__name" href="../">Consultora IEST</a>
+        </div>
+        <nav class="nav" aria-label="Navegación principal">
+          <button class="nav__toggle" aria-expanded="false" aria-controls="menu">
+            <span class="sr-only">Abrir menú</span>
+            ☰
+          </button>
+          <div class="nav__wrap">
+            <ul id="menu" class="nav__list">
+              <li><a class="nav__link" href="../">Inicio</a></li>
+              <li><a class="nav__link is-active" href="./">¿Qué hacemos?</a></li>
+              <li><a class="nav__link" href="../productos/">Productos</a></li>
+              <li><a class="nav__link" href="../proceso/">Proceso</a></li>
+              <li><a class="nav__link" href="../contacto/">Contacto</a></li>
+            </ul>
+            <button class="theme-toggle" type="button" aria-pressed="false" data-theme-toggle>
+              <svg class="theme-toggle__icon theme-toggle__icon--sun" viewBox="0 0 24 24" aria-hidden="true" role="presentation">
+                <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8">
+                  <circle cx="12" cy="12" r="4.25" />
+                  <path d="M12 3v2.25m0 13.5V21m9-9h-2.25m-13.5 0H3m15.364 6.364-1.59-1.59m-9.55-9.55-1.59-1.59m0 12.73 1.59-1.59m9.55-9.55 1.59-1.59" />
+                </g>
+              </svg>
+              <svg class="theme-toggle__icon theme-toggle__icon--moon" viewBox="0 0 24 24" aria-hidden="true" role="presentation">
+                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79Z" />
+              </svg>
+              <span class="sr-only">Cambiar tema</span>
+            </button>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="section page-header">
+        <div class="container section__header">
+          <div>
+            <p class="eyebrow">Consultoría estadística</p>
+            <h1>Casos de uso claros, sin cajas negras.</h1>
+          </div>
+          <p class="muted">
+            Desglosamos cada iniciativa con la matemática que la respalda. Transparencia,
+            reproducibilidad y enfoque técnico para que el conocimiento quede en tu equipo.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container cards">
+          <article class="card card--accent">
+            <h2>Análisis descriptivo e inferencial</h2>
+            <p>
+              Diagnósticos claros con pruebas de hipótesis, intervalos de confianza y
+              atribución de causas. Ideal para entender drivers de negocio y reducir
+              incertidumbre.
+            </p>
+          </article>
+          <article class="card card--accent">
+            <h2>Dashboards interactivos</h2>
+            <p>
+              Power BI, Tableau o Shiny según tu stack. Diseñamos experiencias explorables y
+              automatizadas para equipos operativos y ejecutivos.
+            </p>
+          </article>
+          <article class="card card--accent">
+            <h2>Análisis predictivo</h2>
+            <p>
+              Modelos de series temporales (VAR/ARIMA) y machine learning para pronosticar
+              demanda, churn o pricing, siempre con métricas claras de desempeño.
+            </p>
+          </article>
+          <article class="card card--accent">
+            <h2>Ingeniería de Datos e IA</h2>
+            <p>
+              Pipelines robustos, despliegue de modelos en la nube y monitoreo continuo.
+              Pasamos del notebook a producción manteniendo trazabilidad.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section--accent">
+        <div class="container section__header">
+          <div>
+            <p class="eyebrow">Metodología</p>
+            <h2>Rigor académico con velocidad de negocio.</h2>
+          </div>
+          <p class="muted">
+            Validamos supuestos, medimos incertidumbre y proponemos experimentos A/B cuando
+            corresponde. Las recomendaciones se sostienen con inferencia causal.
+          </p>
+        </div>
+        <div class="container cards">
+          <article class="card">
+            <h3>Transparencia</h3>
+            <p>Documentamos cada paso y entregamos código abierto para auditoría interna.</p>
+          </article>
+          <article class="card">
+            <h3>Transferencia</h3>
+            <p>Materiales reproducibles para que tu equipo mantenga y evolucione los modelos.</p>
+          </article>
+          <article class="card">
+            <h3>Tiempo a valor</h3>
+            <p>Iteraciones cortas con entregables accionables en cada sprint.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__content">
+        <p class="muted">© 2025 - Derechos reservados Consultora IEST.</p>
+        <div class="footer__links">
+          <a href="../">Inicio</a>
+          <a href="./">¿Qué hacemos?</a>
+          <a href="../productos/">Productos</a>
+          <a href="../contacto/">Contacto</a>
+          <a href="../politica-privacidad/">Política de privacidad</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+  </body>
+</html>

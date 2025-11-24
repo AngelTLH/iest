@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Productos | Consultora IEST</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/svg+xml" href="../assets/img/mountain.svg" />
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container topbar__content">
+        <div class="brand">
+          <span class="brand__logo" aria-hidden="true">⛰️</span>
+          <a class="brand__name" href="../">Consultora IEST</a>
+        </div>
+        <nav class="nav" aria-label="Navegación principal">
+          <button class="nav__toggle" aria-expanded="false" aria-controls="menu">
+            <span class="sr-only">Abrir menú</span>
+            ☰
+          </button>
+          <div class="nav__wrap">
+            <ul id="menu" class="nav__list">
+              <li><a class="nav__link" href="../">Inicio</a></li>
+              <li><a class="nav__link" href="../servicios/">¿Qué hacemos?</a></li>
+              <li><a class="nav__link is-active" href="./">Productos</a></li>
+              <li><a class="nav__link" href="../proceso/">Proceso</a></li>
+              <li><a class="nav__link" href="../contacto/">Contacto</a></li>
+            </ul>
+            <button class="theme-toggle" type="button" aria-pressed="false" data-theme-toggle>
+              <svg class="theme-toggle__icon theme-toggle__icon--sun" viewBox="0 0 24 24" aria-hidden="true" role="presentation">
+                <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8">
+                  <circle cx="12" cy="12" r="4.25" />
+                  <path d="M12 3v2.25m0 13.5V21m9-9h-2.25m-13.5 0H3m15.364 6.364-1.59-1.59m-9.55-9.55-1.59-1.59m0 12.73 1.59-1.59m9.55-9.55 1.59-1.59" />
+                </g>
+              </svg>
+              <svg class="theme-toggle__icon theme-toggle__icon--moon" viewBox="0 0 24 24" aria-hidden="true" role="presentation">
+                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79Z" />
+              </svg>
+              <span class="sr-only">Cambiar tema</span>
+            </button>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="section page-header section--muted">
+        <div class="container section__header">
+          <div>
+            <p class="eyebrow">Entregables listos</p>
+            <h1>Productos que aceleran tu implementación.</h1>
+          </div>
+          <p class="muted">
+            Plantillas, playbooks y kits técnicos listos para adaptar a tu operación. Todo
+            documentado para que tu equipo pueda iterar y sostener los proyectos.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container cards">
+          <article class="card card--accent">
+            <h2>Playbooks de modelado</h2>
+            <p>
+              Guías reproducibles en R y Python con pruebas de supuestos, métricas de
+              desempeño y ejemplos de despliegue.
+            </p>
+            <a class="link" href="../servicios/">Conectar con los servicios →</a>
+          </article>
+          <article class="card card--accent">
+            <h2>Plantillas de dashboards</h2>
+            <p>
+              Diseños base para Power BI, Tableau y Shiny con KPIs listos, controles de
+              versión y manual de uso.
+            </p>
+            <a class="link" href="../proceso/">Ver cómo iteramos →</a>
+          </article>
+          <article class="card card--accent">
+            <h2>Kit legal y de privacidad</h2>
+            <p>
+              Modelos de políticas y anexos de tratamiento de datos para acelerar
+              aprobaciones internas.
+            </p>
+            <a class="link" href="../politica-privacidad/">Revisar política →</a>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__content">
+        <p class="muted">© 2025 - Derechos reservados Consultora IEST.</p>
+        <div class="footer__links">
+          <a href="../">Inicio</a>
+          <a href="../servicios/">¿Qué hacemos?</a>
+          <a href="./">Productos</a>
+          <a href="../proceso/">Proceso</a>
+          <a href="../contacto/">Contacto</a>
+          <a href="../politica-privacidad/">Política de privacidad</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+  </body>
+</html>
