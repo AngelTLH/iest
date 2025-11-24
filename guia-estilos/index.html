@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guía de estilos | Consultora IEST</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/svg+xml" href="../assets/img/mountain.svg" />
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container topbar__content">
+        <div class="brand">
+          <span class="brand__logo" aria-hidden="true">⛰️</span>
+          <a class="brand__name" href="../">Consultora IEST</a>
+        </div>
+        <nav class="nav" aria-label="Navegación principal">
+          <button class="nav__toggle" aria-expanded="false" aria-controls="menu">
+            <span class="sr-only">Abrir menú</span>
+            ☰
+          </button>
+          <div class="nav__wrap">
+            <ul id="menu" class="nav__list">
+              <li><a class="nav__link" href="../">Inicio</a></li>
+              <li><a class="nav__link" href="../servicios/">¿Qué hacemos?</a></li>
+              <li><a class="nav__link" href="../productos/">Productos</a></li>
+              <li><a class="nav__link" href="../proceso/">Proceso</a></li>
+              <li><a class="nav__link" href="../contacto/">Contacto</a></li>
+            </ul>
+            <button class="theme-toggle" type="button" aria-pressed="false" data-theme-toggle>
+              <svg class="theme-toggle__icon theme-toggle__icon--sun" viewBox="0 0 24 24" aria-hidden="true" role="presentation">
+                <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8">
+                  <circle cx="12" cy="12" r="4.25" />
+                  <path d="M12 3v2.25m0 13.5V21m9-9h-2.25m-13.5 0H3m15.364 6.364-1.59-1.59m-9.55-9.55-1.59-1.59m0 12.73 1.59-1.59m9.55-9.55 1.59-1.59" />
+                </g>
+              </svg>
+              <svg class="theme-toggle__icon theme-toggle__icon--moon" viewBox="0 0 24 24" aria-hidden="true" role="presentation">
+                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79Z" />
+              </svg>
+              <span class="sr-only">Cambiar tema</span>
+            </button>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="section page-header">
+        <div class="container section__header">
+          <div>
+            <p class="eyebrow">Identidad visual</p>
+            <h1>Variables de color y componentes reutilizables.</h1>
+          </div>
+          <p class="muted">
+            Esta guía resume la paleta nocturna y diurna, tipografías y componentes que usamos
+            en todas las páginas de Consultora IEST.
+          </p>
+        </div>
+      </section>
+
+      <section class="section styleguide">
+        <div>
+          <p class="eyebrow">Paleta</p>
+          <div class="chips">
+            <span class="chip">Primario: #8b5cf6</span>
+            <span class="chip">Resaltado: #38bdf8</span>
+            <span class="chip">Panel: rgba(18,26,46,0.9)</span>
+            <span class="chip">Texto: #e5e7eb</span>
+          </div>
+          <p class="muted">Modo noche por defecto, modo día listo desde el selector de tema.</p>
+        </div>
+        <div>
+          <p class="eyebrow">Componentes</p>
+          <div class="cards">
+            <div class="card">
+              <h3>Botones</h3>
+              <p>Primario, ghost y enlaces con retroalimentación hover.</p>
+            </div>
+            <div class="card">
+              <h3>Tarjetas</h3>
+              <p>Fondos con borde y sombras suaves para agrupar información.</p>
+            </div>
+            <div class="card">
+              <h3>Chips y badges</h3>
+              <p>Ideales para resaltar supuestos, estados o tags de tecnología.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__content">
+        <p class="muted">© 2025 - Derechos reservados Consultora IEST.</p>
+        <div class="footer__links">
+          <a href="../">Inicio</a>
+          <a href="../servicios/">¿Qué hacemos?</a>
+          <a href="../productos/">Productos</a>
+          <a href="../proceso/">Proceso</a>
+          <a href="../contacto/">Contacto</a>
+          <a href="../politica-privacidad/">Política de privacidad</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+  </body>
+</html>

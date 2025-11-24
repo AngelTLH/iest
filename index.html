@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Consultora IEST - Soluciones a tus problemas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/svg+xml" href="assets/img/mountain.svg" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container topbar__content">
+        <div class="brand">
+          <span class="brand__logo" aria-hidden="true">⛰️</span>
+          <span class="brand__name">Consultora IEST</span>
+        </div>
+        <nav class="nav" aria-label="Navegación principal">
+          <button class="nav__toggle" aria-expanded="false" aria-controls="menu">
+            <span class="sr-only">Abrir menú</span>
+            ☰
+          </button>
+          <div class="nav__wrap">
+            <ul id="menu" class="nav__list">
+              <li><a class="nav__link is-active" href="#introduccion">Inicio</a></li>
+              <li><a class="nav__link" href="servicios/">¿Qué hacemos?</a></li>
+              <li><a class="nav__link" href="productos/">Productos</a></li>
+              <li><a class="nav__link" href="proceso/">Proceso</a></li>
+              <li><a class="nav__link" href="contacto/">Contacto</a></li>
+            </ul>
+            <button class="theme-toggle" type="button" aria-pressed="false" data-theme-toggle>
+              <svg class="theme-toggle__icon theme-toggle__icon--sun" viewBox="0 0 24 24" aria-hidden="true" role="presentation">
+                <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8">
+                  <circle cx="12" cy="12" r="4.25" />
+                  <path d="M12 3v2.25m0 13.5V21m9-9h-2.25m-13.5 0H3m15.364 6.364-1.59-1.59m-9.55-9.55-1.59-1.59m0 12.73 1.59-1.59m9.55-9.55 1.59-1.59" />
+                </g>
+              </svg>
+              <svg class="theme-toggle__icon theme-toggle__icon--moon" viewBox="0 0 24 24" aria-hidden="true" role="presentation">
+                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79Z" />
+              </svg>
+              <span class="sr-only">Cambiar tema</span>
+            </button>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="introduccion">
+        <div class="container hero__grid">
+          <div class="hero__copy">
+            <p class="badge">Consultora Estadística IEST</p>
+            <h1>Ciencia de datos rigurosa para decisiones con alta incertidumbre.</h1>
+            <p class="lead">
+              Transformamos la complejidad matemática en ventaja competitiva: del
+              modelamiento econométrico avanzado a la implementación de IA en tu
+              infraestructura, siempre con trazabilidad y foco en negocio.
+            </p>
+            <div class="hero__cta">
+              <a class="btn btn--primary" href="contacto/">Agendar contacto</a>
+              <a class="btn btn--ghost" href="servicios/">Ver qué hacemos</a>
+            </div>
+          </div>
+          <div class="hero__card">
+            <div class="card">
+              <p class="eyebrow">Criterios clave</p>
+              <ul class="list">
+                <li>Sin cajas negras: modelos auditables y explicables.</li>
+                <li>Rigor académico con velocidad para negocio.</li>
+                <li>Entregables reproducibles en R y Python.</li>
+                <li>Implementación de IA alineada a tu infraestructura.</li>
+              </ul>
+              <p class="muted">Decisiones basadas en inferencia, no corazonadas.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--muted">
+        <div class="container section__header">
+          <div>
+            <p class="eyebrow">Por qué elegirnos</p>
+            <h2>¿Por qué Consultoría Estadística IEST?</h2>
+          </div>
+          <p class="muted">
+            Integramos transparencia matemática con tiempos de respuesta empresariales. Cada
+            proyecto se diseña con trazabilidad, documentación y transferencia de
+            conocimiento a tu equipo.
+          </p>
+        </div>
+        <div class="container cards">
+          <article class="card card--accent">
+            <h3>Sin cajas negras</h3>
+            <p>
+              Modelos auditables y explicables. Trabajamos con código abierto (R, Python) y
+              metodologías reproducibles para que la lógica quede en tu organización.
+            </p>
+            <p class="muted">Entregamos predicción y la matemática que la respalda.</p>
+          </article>
+          <article class="card card--accent">
+            <h3>Rigor académico, velocidad de negocio</h3>
+            <p>
+              Validamos supuestos, testeamos hipótesis y diseñamos experimentos A/B. Las
+              decisiones se basan en inferencia causal, no en corazonadas.
+            </p>
+            <p class="muted">Investigación profunda con tiempos ejecutivos.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container section__header">
+          <div>
+            <p class="eyebrow">Capacidades clave</p>
+            <h2>Servicios destacados</h2>
+          </div>
+          <p class="muted">
+            Acompañamos todo el ciclo de datos: diagnóstico, visualización, predicción e
+            ingeniería para llevar tus modelos a producción.
+          </p>
+        </div>
+        <div class="container cards">
+          <article class="card card--accent">
+            <h3>Análisis descriptivo e inferencial</h3>
+            <p>
+              Transformamos datos crudos en diagnósticos claros. Usamos inferencia estadística
+              rigurosa para explicar por qué ocurre un patrón y si es replicable.
+            </p>
+          </article>
+          <article class="card card--accent">
+            <h3>Dashboards interactivos</h3>
+            <p>
+              Diseñamos centros de mando intuitivos. Dashboards dinámicos que democratizan el
+              acceso a KPIs y automatizan la actualización de datos.
+            </p>
+          </article>
+          <article class="card card--accent">
+            <h3>Análisis predictivo</h3>
+            <p>
+              Anticipa tendencias y comportamientos con modelos de series temporales
+              (VAR/ARIMA) y machine learning adaptados a tu dominio.
+            </p>
+          </article>
+          <article class="card card--accent">
+            <h3>Ingeniería de Datos e IA</h3>
+            <p>
+              Del notebook al despliegue. Construimos pipelines robustos y productizamos
+              modelos en la nube integrados con tu infraestructura.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section--accent">
+        <div class="container section__header">
+          <div>
+            <p class="eyebrow">Tecnología y método</p>
+            <h2>Nuestro Stack Tecnológico y Flujo de Trabajo</h2>
+          </div>
+          <p class="muted">
+            Somos agnósticos en herramientas pero expertos en integración. Elegimos el stack
+            según tu contexto técnico y regulatorio.
+          </p>
+        </div>
+        <div class="container cards">
+          <article class="card">
+            <h3>Lenguajes</h3>
+            <ul class="list">
+              <li>R (Tidyverse/Shiny) para reporting reproducible.</li>
+              <li>Python (Pandas/Scikit-Learn/PyTorch) para modelado y orquestación.</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Visualización</h3>
+            <ul class="list">
+              <li>Power BI, Tableau y Shiny para dashboards interactivos.</li>
+              <li>Quarto para reporting automatizado y trazable.</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Infraestructura</h3>
+            <ul class="list">
+              <li>Integración con nubes públicas y entornos on-premise.</li>
+              <li>Pipelines de datos listos para escalar (próximamente detalles).</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section--muted">
+        <div class="container section__header">
+          <div>
+            <p class="eyebrow">Explora cada capítulo</p>
+            <h2>Páginas independientes para profundizar.</h2>
+          </div>
+          <p class="muted">
+            Mantén la página principal limpia y encuentra cada bloque en su propia carpeta.
+            Edita textos y contenidos de forma localizada y ordenada.
+          </p>
+        </div>
+        <div class="container cards">
+          <article class="card card--accent">
+            <h3>¿Qué hacemos?</h3>
+            <p>Casos de uso y el enfoque estadístico detrás de cada entrega.</p>
+            <a class="link" href="servicios/">Explorar cómo trabajamos →</a>
+          </article>
+          <article class="card card--accent">
+            <h3>Proceso</h3>
+            <p>Roadmap con hitos claros para pasar de diagnóstico a producción.</p>
+            <a class="link" href="proceso/">Ir al proceso →</a>
+          </article>
+          <article class="card card--accent">
+            <h3>Productos</h3>
+            <p>Kits y plantillas para implementar rápido en tu organización.</p>
+            <a class="link" href="productos/">Ver productos →</a>
+          </article>
+          <article class="card card--accent">
+            <h3>Contacto</h3>
+            <p>Agenda una sesión técnica y detalla tus retos de datos.</p>
+            <a class="link" href="contacto/">Ir a Contacto →</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container section__header">
+          <div>
+            <p class="eyebrow">¿Hablamos?</p>
+            <h2>¿Tienes datos complejos y preguntas difíciles? Hablemos de estadística.</h2>
+          </div>
+          <p class="muted">
+            Preferimos conversaciones técnicas y transparentes. Explicamos supuestos,
+            limitaciones y riesgos antes de recomendar una inversión.
+          </p>
+        </div>
+        <div class="container hero__cta">
+          <a class="btn btn--ghost" href="politica-privacidad/">Leer política de privacidad</a>
+          <a class="btn btn--primary" href="contacto/">Contactar al equipo técnico</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__content">
+        <p class="muted">© 2025 - Derechos reservados Consultora IEST.</p>
+        <div class="footer__links">
+          <a href="#introduccion">Inicio</a>
+          <a href="servicios/">¿Qué hacemos?</a>
+          <a href="productos/">Productos</a>
+          <a href="contacto/">Contacto</a>
+          <a href="politica-privacidad/">Política de privacidad</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
