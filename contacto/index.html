@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto | Consultora IEST</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/svg+xml" href="../assets/img/mountain.svg" />
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container topbar__content">
+        <div class="brand">
+          <span class="brand__logo" aria-hidden="true">⛰️</span>
+          <a class="brand__name" href="../">Consultora IEST</a>
+        </div>
+        <nav class="nav" aria-label="Navegación principal">
+          <button class="nav__toggle" aria-expanded="false" aria-controls="menu">
+            <span class="sr-only">Abrir menú</span>
+            ☰
+          </button>
+          <div class="nav__wrap">
+            <ul id="menu" class="nav__list">
+              <li><a class="nav__link" href="../">Inicio</a></li>
+              <li><a class="nav__link" href="../servicios/">¿Qué hacemos?</a></li>
+              <li><a class="nav__link" href="../productos/">Productos</a></li>
+              <li><a class="nav__link" href="../proceso/">Proceso</a></li>
+              <li><a class="nav__link is-active" href="./">Contacto</a></li>
+            </ul>
+            <button class="theme-toggle" type="button" aria-pressed="false" data-theme-toggle>
+              <span class="theme-toggle__icon theme-toggle__icon--sun" aria-hidden="true">☀️</span>
+              <span class="theme-toggle__icon theme-toggle__icon--moon" aria-hidden="true">🌙</span>
+              <span class="sr-only">Cambiar tema</span>
+            </button>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="section page-header">
+        <div class="container section__header">
+          <div>
+            <p class="eyebrow">Agendemos</p>
+            <h1>Cuéntanos tu reto de datos.</h1>
+          </div>
+          <p class="muted">
+            Preferimos conversaciones técnicas: comparte contexto, datasets y restricciones.
+            Respondemos con un plan concreto y supuestos explícitos.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container contact">
+          <div class="card">
+            <h2>¿Qué necesitas?</h2>
+            <p>
+              Te contactaremos con una propuesta y estimación inicial. No vendemos promesas
+              genéricas: cada recomendación incluye métricas, riesgos y próximos pasos.
+            </p>
+            <ul class="list">
+              <li>Revisión de calidad de datos y factibilidad.</li>
+              <li>Diseño estadístico y experimentos A/B.</li>
+              <li>Modelos explicables y desplegables.</li>
+            </ul>
+            <p class="muted">Si necesitas detallar aún más tu caso, escríbenos a consultoria.iest@gmail.com.</p>
+          </div>
+          <form
+            class="form"
+            action="#"
+            method="post"
+            data-secure-form
+            data-endpoint=""
+          >
+            <label class="sr-only" for="nombre">Nombre</label>
+            <input id="nombre" name="nombre" type="text" placeholder="Nombre y apellido" required />
+
+            <label class="sr-only" for="correo">Correo</label>
+            <input id="correo" name="correo" type="email" placeholder="Correo corporativo" required />
+
+            <label class="sr-only" for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="4" placeholder="Describe el proyecto, objetivos y plazos." required></textarea>
+
+            <button class="btn btn--primary" type="submit">Contactar al equipo técnico</button>
+            <p class="muted">
+              Al enviar aceptas nuestra <a href="../politica-privacidad/">política de privacidad</a>.
+              Los datos se envían solo al endpoint privado configurado por el equipo IEST.
+            </p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__content">
+        <p class="muted">© 2025 - Derechos reservados Consultora IEST.</p>
+        <div class="footer__links">
+          <a href="../">Inicio</a>
+          <a href="../servicios/">¿Qué hacemos?</a>
+          <a href="../productos/">Productos</a>
+          <a href="../proceso/">Proceso</a>
+          <a href="./">Contacto</a>
+          <a href="../politica-privacidad/">Política de privacidad</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+  </body>
+</html>
