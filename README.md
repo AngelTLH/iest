@@ -8,7 +8,8 @@ Base minimalista en HTML, CSS y JavaScript para empezar proyectos estáticos con
 assets/
   css/        # Estilos globales y utilidades
   js/         # Interacciones ligeras (menú, scroll suave)
-  img/        # Íconos e imágenes
+  img/        # Íconos e imágenes de apoyo
+logos/        # Logotipos oficiales IEST usados en header y favicon
 servicios/     # Página de "¿Qué hacemos?"
 productos/     # Catálogo de entregables listos para usar
 proceso/       # Roadmap detallado
@@ -37,7 +38,7 @@ Sin un endpoint válido, el envío se bloqueará con un mensaje para evitar expo
 
 ## Personalización rápida
 
-- Coloca tus imágenes en `assets/img` y actualiza las rutas en el HTML.
+- Coloca imágenes de apoyo en `assets/img`; mantén los logotipos oficiales en `logos/` para conservar el header y favicon.
 - Añade scripts adicionales en `assets/js` y enlázalos en el `<head>` o antes del cierre de `<body>`.
 - Si migras a React, puedes mantener la estructura de estilos y convertir las secciones en componentes.
 
