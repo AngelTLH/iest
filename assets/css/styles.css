@@ -466,11 +466,11 @@ textarea:focus {
   border: 0;
 }
 
-@media (max-width: 720px) {
+@media (max-width: 900px) {
   .nav__list {
     position: absolute;
     right: 0;
-    top: 52px;
+    top: calc(100% + 0.75rem);
     flex-direction: column;
     width: 220px;
     padding: 0.75rem;

@@ -10,6 +10,7 @@ assets/
   js/         # Interacciones ligeras (menú, scroll suave)
   img/        # Íconos e imágenes de apoyo
 logos/        # Logotipos oficiales IEST usados en header y favicon circular
+quienes-somos/ # Misión, visión, valores y equipo
 servicios/     # Página de "¿Qué hacemos?"
 productos/     # Catálogo de entregables listos para usar
 proceso/       # Roadmap detallado
@@ -22,7 +23,7 @@ index.html     # Página principal con CTA hacia cada sección
 ## Cómo usar
 
 1. Clona el repositorio y abre `index.html` en tu navegador para ver la portada.
-2. Edita el contenido específico en la carpeta correspondiente (`servicios/`, `proceso/`, etc.).
+2. Edita el contenido específico en la carpeta correspondiente (`quienes-somos/`, `servicios/`, `proceso/`, etc.).
 3. Ajusta las variables CSS en `assets/css/styles.css` para cambiar paleta y tipografía.
 4. Sube el proyecto a GitHub y habilita **Pages** apuntando a la rama principal o carpeta `/docs` si prefieres mantener el código separado.
 
