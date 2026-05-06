@@ -91,7 +91,7 @@ img {
 }
 
 .brand__logo {
-  width: clamp(9rem, 16.8vw, 11.7rem);
+  width: clamp(11.7rem, 21.84vw, 15.21rem);
   display: inline-flex;
   align-items: center;
   justify-content: center;
