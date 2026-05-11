@@ -11,7 +11,7 @@
     <!-- End Google Tag Manager -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>¿Qué hacemos? | Consultora IEST</title>
+    <title>Servicios | Consultora IEST</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -51,14 +51,14 @@
           <div class="nav__wrap">
             <ul id="menu" class="nav__list">
               <li><a class="nav__link" href="../">Inicio</a></li>
-              <li>
-                <a class="nav__link" href="../quienes-somos/">Quiénes somos</a>
-              </li>
-              <li>
-                <a class="nav__link is-active" href="./">¿Qué hacemos?</a>
-              </li>
+              <li><a class="nav__link is-active" href="./">Servicios</a></li>
+              <li><a class="nav__link" href="../portafolio/">Portafolio</a></li>
               <li><a class="nav__link" href="../productos/">Productos</a></li>
-              <li><a class="nav__link" href="../proceso/">Proceso</a></li>
+              <li>
+                <a class="nav__link" href="../quienes-somos/"
+                  >¿Quiénes somos?</a
+                >
+              </li>
               <li><a class="nav__link" href="../contacto/">Contacto</a></li>
             </ul>
           </div>
@@ -67,11 +67,45 @@
     </header>
 
     <main>
-      <section class="section page-header">
+      <section class="section page-header section--muted">
         <div class="container section__header">
           <div>
-            <p class="eyebrow">Consultoría estadística</p>
-            <h1>Casos de uso claros, sin cajas negras.</h1>
+            <p class="eyebrow">Servicios</p>
+            <h1>
+              Servicios estadísticos integrados, de la pregunta al despliegue.
+            </h1>
+          </div>
+          <p class="muted">
+            Reorganizamos esta sección en dos capítulos internos: qué hacemos y
+            cómo lo ejecutamos. Así puedes revisar capacidades y proceso en un
+            mismo lugar.
+          </p>
+        </div>
+        <div class="container cards">
+          <article class="card card--accent">
+            <h3>¿Qué hacemos?</h3>
+            <p>
+              Capacidades técnicas para diagnosticar, visualizar, predecir y
+              desplegar soluciones de datos con trazabilidad.
+            </p>
+            <a class="link" href="#que-hacemos">Ver capacidades →</a>
+          </article>
+          <article class="card card--accent">
+            <h3>Proceso</h3>
+            <p>
+              Flujo de trabajo desde el descubrimiento técnico hasta la
+              productivización y transferencia al equipo.
+            </p>
+            <a class="link" href="#proceso">Ver proceso →</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="que-hacemos">
+        <div class="container section__header">
+          <div>
+            <p class="eyebrow">¿Qué hacemos?</p>
+            <h2>Casos de uso claros, sin cajas negras.</h2>
           </div>
           <p class="muted">
             Desglosamos cada iniciativa con la matemática que la respalda.
@@ -79,12 +113,9 @@
             conocimiento quede en tu equipo.
           </p>
         </div>
-      </section>
-
-      <section class="section">
         <div class="container cards">
           <article class="card card--accent">
-            <h2>Análisis descriptivo e inferencial</h2>
+            <h3>Análisis descriptivo e inferencial</h3>
             <p>
               Diagnósticos claros con pruebas de hipótesis, intervalos de
               confianza y atribución de causas. Ideal para entender drivers de
@@ -92,14 +123,14 @@
             </p>
           </article>
           <article class="card card--accent">
-            <h2>Dashboards interactivos</h2>
+            <h3>Dashboards interactivos</h3>
             <p>
               Power BI, Tableau o Shiny según tu stack. Diseñamos experiencias
               explorables y automatizadas para equipos operativos y ejecutivos.
             </p>
           </article>
           <article class="card card--accent">
-            <h2>Análisis predictivo</h2>
+            <h3>Análisis predictivo</h3>
             <p>
               Modelos de series temporales (VAR/ARIMA) y machine learning para
               pronosticar demanda, churn o pricing, siempre con métricas claras
@@ -107,7 +138,7 @@
             </p>
           </article>
           <article class="card card--accent">
-            <h2>Ingeniería de Datos e IA</h2>
+            <h3>Ingeniería de Datos e IA</h3>
             <p>
               Pipelines robustos, despliegue de modelos en la nube y monitoreo
               continuo. Pasamos del notebook a producción manteniendo
@@ -152,6 +183,62 @@
           </article>
         </div>
       </section>
+
+      <section class="section" id="proceso">
+        <div class="container section__header">
+          <div>
+            <p class="eyebrow">Proceso</p>
+            <h2>Del diagnóstico al despliegue con trazabilidad.</h2>
+          </div>
+          <p class="muted">
+            Mantenemos transparencia en cada entrega: supuestos validados,
+            código versionado y decisiones documentadas para auditoría técnica y
+            de negocio.
+          </p>
+        </div>
+        <div class="container timeline">
+          <article class="timeline__item">
+            <span class="timeline__step">01</span>
+            <div>
+              <h3>Descubrimiento técnico</h3>
+              <p>
+                Análisis de datos, calidad, riesgos y definición de la pregunta
+                causal.
+              </p>
+            </div>
+          </article>
+          <article class="timeline__item">
+            <span class="timeline__step">02</span>
+            <div>
+              <h3>Diseño estadístico</h3>
+              <p>
+                Elección de métodos (econometría, series temporales, ML) y plan
+                de validación con métricas acordadas.
+              </p>
+            </div>
+          </article>
+          <article class="timeline__item">
+            <span class="timeline__step">03</span>
+            <div>
+              <h3>Prototipo y experimentación</h3>
+              <p>
+                Iteraciones cortas, experimentos A/B cuando aplica y notebooks
+                reproducibles en R/Python.
+              </p>
+            </div>
+          </article>
+          <article class="timeline__item">
+            <span class="timeline__step">04</span>
+            <div>
+              <h3>Productivización</h3>
+              <p>
+                Pipelines y APIs listos para despliegue, monitoreo de deriva y
+                handoff documentado a tu equipo.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
     </main>
 
     <footer class="footer">
@@ -159,10 +246,10 @@
         <p class="muted">© 2026 - Derechos reservados Consultora IEST.</p>
         <div class="footer__links">
           <a href="../">Inicio</a>
-          <a href="../quienes-somos/">Quiénes somos</a>
-          <a href="./">¿Qué hacemos?</a>
+          <a href="./">Servicios</a>
+          <a href="../portafolio/">Portafolio</a>
           <a href="../productos/">Productos</a>
-          <a href="../proceso/">Proceso</a>
+          <a href="../quienes-somos/">¿Quiénes somos?</a>
           <a href="../contacto/">Contacto</a>
           <a href="../politica-privacidad/">Política de privacidad</a>
         </div>
