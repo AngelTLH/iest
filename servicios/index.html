@@ -51,7 +51,21 @@
           <div class="nav__wrap">
             <ul id="menu" class="nav__list">
               <li><a class="nav__link" href="../">Inicio</a></li>
-              <li><a class="nav__link is-active" href="./">Servicios</a></li>
+              <li class="nav__item nav__item--has-submenu">
+                <a class="nav__link is-active" href="./" aria-haspopup="true"
+                  >Servicios</a
+                >
+                <ul class="nav__submenu" aria-label="Subsecciones de Servicios">
+                  <li>
+                    <a class="nav__submenu-link" href="#que-hacemos"
+                      >¿Qué hacemos?</a
+                    >
+                  </li>
+                  <li>
+                    <a class="nav__submenu-link" href="#proceso">Proceso</a>
+                  </li>
+                </ul>
+              </li>
               <li><a class="nav__link" href="../portafolio/">Portafolio</a></li>
               <li><a class="nav__link" href="../productos/">Productos</a></li>
               <li>
