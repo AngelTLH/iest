@@ -71,7 +71,28 @@
                 </ul>
               </li>
               <li><a class="nav__link" href="../portafolio/">Portafolio</a></li>
-              <li><a class="nav__link is-active" href="./">Productos</a></li>
+              <li class="nav__item nav__item--has-submenu">
+                <a class="nav__link is-active" href="./" aria-haspopup="true"
+                  >Productos</a
+                >
+                <ul class="nav__submenu" aria-label="Subsecciones de Productos">
+                  <li>
+                    <a class="nav__submenu-link" href="../productos/producto-1/"
+                      >Producto 1</a
+                    >
+                  </li>
+                  <li>
+                    <a class="nav__submenu-link" href="../productos/producto-2/"
+                      >Producto 2</a
+                    >
+                  </li>
+                  <li>
+                    <a class="nav__submenu-link" href="../productos/producto-3/"
+                      >Producto 3</a
+                    >
+                  </li>
+                </ul>
+              </li>
               <li>
                 <a class="nav__link" href="../quienes-somos/"
                   >¿Quiénes somos?</a
@@ -102,32 +123,31 @@
       <section class="section">
         <div class="container cards">
           <article class="card card--accent">
-            <h2>Playbooks de modelado</h2>
+            <p class="eyebrow">Ejemplo</p>
+            <h2>Producto 1</h2>
             <p>
-              Guías reproducibles en R y Python con pruebas de supuestos,
-              métricas de desempeño y ejemplos de despliegue.
+              Página independiente de ejemplo para documentar alcance,
+              resultados y materiales del primer producto destacado.
             </p>
-            <a class="link" href="../servicios/"
-              >Conectar con los servicios →</a
-            >
+            <a class="link" href="producto-1/">Ver Producto 1 →</a>
           </article>
           <article class="card card--accent">
-            <h2>Plantillas de dashboards</h2>
+            <p class="eyebrow">Ejemplo</p>
+            <h2>Producto 2</h2>
             <p>
-              Diseños base para Power BI, Tableau y Shiny con KPIs listos,
-              controles de versión y manual de uso.
+              Espacio reservado para presentar un segundo producto con sus
+              objetivos, componentes y próximos pasos de adopción.
             </p>
-            <a class="link" href="../servicios/#proceso">Ver cómo iteramos →</a>
+            <a class="link" href="producto-2/">Ver Producto 2 →</a>
           </article>
           <article class="card card--accent">
-            <h2>Kit legal y de privacidad</h2>
+            <p class="eyebrow">Ejemplo</p>
+            <h2>Producto 3</h2>
             <p>
-              Modelos de políticas y anexos de tratamiento de datos para
-              acelerar aprobaciones internas.
+              Plantilla base para describir un tercer producto, incluyendo
+              beneficios esperados y enlaces a información complementaria.
             </p>
-            <a class="link" href="../politica-privacidad/"
-              >Revisar política →</a
-            >
+            <a class="link" href="producto-3/">Ver Producto 3 →</a>
           </article>
         </div>
       </section>

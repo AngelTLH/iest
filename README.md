@@ -12,7 +12,7 @@ assets/
 logos/        # Logotipos oficiales IEST usados en header y favicon circular
 servicios/     # Servicios con capítulos internos: "¿Qué hacemos?" y "Proceso"
 portafolio/    # Ejemplos de soluciones y líneas de trabajo
-productos/     # Catálogo de entregables listos para usar
+productos/     # Catálogo de entregables y subpáginas de Producto 1, 2 y 3
 quienes-somos/ # Misión, visión, valores y equipo
 contacto/      # Formulario estilizado
 guia-estilos/  # Guía rápida de utilidades y variables
