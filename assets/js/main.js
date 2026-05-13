@@ -66,3 +66,41 @@ secureForm?.addEventListener("submit", async (event) => {
 
 // Marca el año actual en el footer si se requiere en el futuro
 // document.querySelector('[data-year]').textContent = new Date().getFullYear();
+
+// Ventanas superpuestas para proyectos del portafolio
+const modalOpeners = document.querySelectorAll("[data-modal-open]");
+const modalClosers = document.querySelectorAll("[data-modal-close]");
+const supportsDialog = typeof HTMLDialogElement !== "undefined";
+
+modalOpeners.forEach((opener) => {
+  opener.addEventListener("click", () => {
+    const modalId = opener.getAttribute("data-modal-open");
+    const modal = modalId ? document.getElementById(modalId) : null;
+
+    if (supportsDialog && modal instanceof HTMLDialogElement) {
+      modal.showModal();
+    }
+  });
+});
+
+modalClosers.forEach((closer) => {
+  closer.addEventListener("click", () => {
+    const modal = closer.closest("dialog");
+
+    if (supportsDialog && modal instanceof HTMLDialogElement) {
+      modal.close();
+    }
+  });
+});
+
+document.querySelectorAll(".project-modal").forEach((modal) => {
+  modal.addEventListener("click", (event) => {
+    if (
+      event.target === modal &&
+      supportsDialog &&
+      modal instanceof HTMLDialogElement
+    ) {
+      modal.close();
+    }
+  });
+});
