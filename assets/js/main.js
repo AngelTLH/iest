@@ -88,7 +88,11 @@ modalClosers.forEach((closer) => {
     const modal = closer.closest("dialog");
 
     if (supportsDialog && modal instanceof HTMLDialogElement) {
-      modal.close();
+      modal.classList.add("is-closing");
+      modal.addEventListener("animationend", () => {
+        modal.close();
+        modal.classList.remove("is-closing");
+      }, { once: true });
     }
   });
 });
@@ -100,7 +104,11 @@ document.querySelectorAll(".project-modal").forEach((modal) => {
       supportsDialog &&
       modal instanceof HTMLDialogElement
     ) {
-      modal.close();
+      modal.classList.add("is-closing");
+      modal.addEventListener("animationend", () => {
+        modal.close();
+        modal.classList.remove("is-closing");
+      }, { once: true });
     }
   });
 });
